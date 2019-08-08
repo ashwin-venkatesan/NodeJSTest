@@ -27,7 +27,7 @@ describe('Home Message', () => {
             done();
         });
     });
-    it ('Should Find a Name Inserted', (done) =>{
+    it ('It Should Find a Name Inserted', (done) =>{
         chai.request('http://localhost:3107').get('/api/names/1').end((err,res) =>{
             res.body.should.have.property('name');
             done();
